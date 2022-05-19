@@ -243,3 +243,142 @@ body{
   background: turquoise;
   color: black;
 }
+#sm-banner{
+  display: flex;
+  justify-content:  space-around;
+  flex-wrap: wrap;
+
+}
+
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: flex-start;
+  text-align: center;
+  background-image: url(img/lentes_banner.jpg);
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+#sm-banner .banner-tienda{
+  background-image: url(img/tienda.jpg);
+}
+#sm-banner h4{
+  color:white;
+  font-size: 20px;
+  font-weight: 300;
+}
+#sm-banner h2{
+  color:white;
+  font-size: 20px;
+  font-weight: 800;
+}
+#sm-banner span{
+  color:white;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+button.white{
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  transition: 0.2s;
+}
+#sm-banner .banner-box:hover button{
+  background: turquoise;
+  border: 1px solid turquoise
+}
+#newsletter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px;
+  align-items: center;
+  background-color: turquoise;
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+}
+#newsletter .form{
+  display: flex;
+  width: 40%;
+}
+
+#newsletter h4{
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+}
+#newsletter p{
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+#newsletter p span{
+  font-size: 18px;
+  font-weight:800;
+  color: black;
+  
+}
+#newsletter input{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+  background-color: black;
+  color: white;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer col{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+footer .logo{
+  margin-bottom: 30px;
+}
+footer h4{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p{
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+footer .follow{
+  margin-top: 15px;
+}
+footer .follow i{
+  color: #222;
+  margin-bottom: 25px;
+  padding-right: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
