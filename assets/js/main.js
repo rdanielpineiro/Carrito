@@ -15,6 +15,36 @@ if (close){
     }
     )
 }
+const products_two=[
+  {
+    id:9,
+    name: 'Rayban',
+    price: 3899,
+    image: 'assets/img/lentos15.png',
+    descripcion: 'Rayban Sun'
+  },
+  {
+    id:10,
+    name: 'Rayban',
+    price: 2999,
+    image: 'assets/img/lentes16.png',
+    descripcion: 'Rayban Flat Sun'
+  },
+  {
+    id:11,
+    name: 'Rayban',
+    price: 2200,
+    image: 'assets/img/lentes17.png',
+    descripcion: 'Rayban Oftalmicos'
+  },
+  {
+    id:12,
+    name: 'Hawkers',
+    price: 1829,
+    image: 'assets/img/lento14.jpg',
+    descripcion: 'Hawkers Oftalmicos Flat'
+  }
+]
 
 const products = [
   {
@@ -84,8 +114,10 @@ const products = [
 ]
 
 const wrapperProducts = document.getElementById('productos')
+const wrapperProducts_2 = document.getElementById('productos2')
 
 let productsHTML = ''
+let productsHTML_2 = ''
 
 // Bucle
 // for (let i = 0; i < products.length; i++) {
@@ -102,7 +134,23 @@ for (let product of products) {
                     <h5>${product.descripcion}</h5>
                     <h4>${product.price}</h4>
                 </div>
-                <button class="wrapper__product-btn-item" data-id="${product.id}">
+                <button class="normal-tienda" data-id="${product.id}">
+          <i class='bx bx-shopping-bag'></i>
+          <span class="wrapper__product-btn-text">Add to Cart</span>
+      </div>
+    
+  `
+}
+for (let product of products_two) {
+  productsHTML_2 += `
+  <div class="pro">
+                <img src="${product.image}" alt="" >
+                <div class="des">
+                    <span>${product.name}</span>
+                    <h5>${product.descripcion}</h5>
+                    <h4>${product.price}</h4>
+                </div>
+                <button class="normal-tienda" data-id="${product.id}">
           <i class='bx bx-shopping-bag'></i>
           <span class="wrapper__product-btn-text">Add to Cart</span>
       </div>
@@ -111,6 +159,7 @@ for (let product of products) {
 }
 
 wrapperProducts.insertAdjacentHTML('beforeend', productsHTML)
+wrapperProducts_2.insertAdjacentHTML('beforeend',productsHTML_2)
 
 let cart = []
 
@@ -119,6 +168,11 @@ function find(id) {
     if (product.id === id) {
       return product
     }
+  for(let product of products_two){
+    if(product.id === id){
+      return product
+    }
+  }
   }
 }
 
@@ -128,8 +182,15 @@ function addToCart(id) {
 }
 
 wrapperProducts.addEventListener('click', function (e) {
-  if (e.target.closest('.wrapper__product-btn-item')) {
-    const id = e.target.closest('.wrapper__product-btn-item').dataset.id
+  if (e.target.closest('.normal-tienda')) {
+    const id = e.target.closest('.normal-tienda').dataset.id
+    addToCart(+id)
+    renderCart()
+  }
+})
+wrapperProducts_2.addEventListener('click', function (e) {
+  if (e.target.closest('.normal-tienda')) {
+    const id = e.target.closest('.normal-tienda').dataset.id
     addToCart(+id)
     renderCart()
   }
@@ -155,6 +216,7 @@ function renderCart() {
     </div>
     `
   }
+  
   const cartTotal = document.getElementById('cart-total')
 
   wrapperCart.innerHTML = cartHTML.length > 0 ? cartHTML : '<p>No hay productos</p>'
