@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping </title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/edf2aa7518.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css">
@@ -18,9 +20,13 @@
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Conocenos</a></li> 
-                <li><a href="#"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAXFJREFUWEftmNFNxDAQRN9VAFQA1wElQAdQAVDB0QHQAVQAdEAH0AFcBUAFQAWgQTZaWcl57UTIH14pipTYm+eZrO1kQWOxaIyHDpRzpCtUqtAlsAK2cx1nvH8DnMd8qWXfMz7Im+oT2GkJSCx/wrSgUBXQldH/wutFaOfpW6yQPJbXCp23nFBfpkBUKB8j/YqBDoGnkOwOOHEC3QOnoe0B8DgXkC3NfeDZCbQE3kLb6zClDHUtVkg2KXm0TaO+zUCdAVJTIbteN8xvxUBKqpdTE2eMI0Cj3k3A3sNE92Cuq9+mYqgCUn47agsmGxUvgAXRNY+a1UBjUGPueWDUdxKQEqjiZGGsvBRIFSWLdPbEZKD4EFWQbNKhkHU69jwUps1sQIXPHW3egXJKdoW6QjkFcvf7O1StkGbedPXOJZt6fx1m99886SbfuxhOhbD9j+0OYehTWmuRFsX/+FjUBi7uKAcVmnPkVbn6z4acbM0p9AOsdkMlwZ/SJQAAAABJRU5ErkJggg=="/></a></li>
-    
+                <li id="lg-bag"><a href="#"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAXFJREFUWEftmNFNxDAQRN9VAFQA1wElQAdQAVDB0QHQAVQAdEAH0AFcBUAFQAWgQTZaWcl57UTIH14pipTYm+eZrO1kQWOxaIyHDpRzpCtUqtAlsAK2cx1nvH8DnMd8qWXfMz7Im+oT2GkJSCx/wrSgUBXQldH/wutFaOfpW6yQPJbXCp23nFBfpkBUKB8j/YqBDoGnkOwOOHEC3QOnoe0B8DgXkC3NfeDZCbQE3kLb6zClDHUtVkg2KXm0TaO+zUCdAVJTIbteN8xvxUBKqpdTE2eMI0Cj3k3A3sNE92Cuq9+mYqgCUn47agsmGxUvgAXRNY+a1UBjUGPueWDUdxKQEqjiZGGsvBRIFSWLdPbEZKD4EFWQbNKhkHU69jwUps1sQIXPHW3egXJKdoW6QjkFcvf7O1StkGbedPXOJZt6fx1m99886SbfuxhOhbD9j+0OYehTWmuRFsX/+FjUBi7uKAcVmnPkVbn6z4acbM0p9AOsdkMlwZ/SJQAAAABJRU5ErkJggg=="/></a></li>
+                <a href="" id="close"><i class="far fa-times"></i></a>
             </ul>  
+        </div>
+        <div id="mobile">
+            <a href="#"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAXFJREFUWEftmNFNxDAQRN9VAFQA1wElQAdQAVDB0QHQAVQAdEAH0AFcBUAFQAWgQTZaWcl57UTIH14pipTYm+eZrO1kQWOxaIyHDpRzpCtUqtAlsAK2cx1nvH8DnMd8qWXfMz7Im+oT2GkJSCx/wrSgUBXQldH/wutFaOfpW6yQPJbXCp23nFBfpkBUKB8j/YqBDoGnkOwOOHEC3QOnoe0B8DgXkC3NfeDZCbQE3kLb6zClDHUtVkg2KXm0TaO+zUCdAVJTIbteN8xvxUBKqpdTE2eMI0Cj3k3A3sNE92Cuq9+mYqgCUn47agsmGxUvgAXRNY+a1UBjUGPueWDUdxKQEqjiZGGsvBRIFSWLdPbEZKD4EFWQbNKhkHU69jwUps1sQIXPHW3egXJKdoW6QjkFcvf7O1StkGbedPXOJZt6fx1m99886SbfuxhOhbD9j+0OYehTWmuRFsX/+FjUBi7uKAcVmnPkVbn6z4acbM0p9AOsdkMlwZ/SJQAAAABJRU5ErkJggg=="/></a>
+            <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
 
@@ -67,80 +73,12 @@
     <section id="product1" class="section-p1">
         <h2>Nuestro Productos</h2>
         <p>Coleccion de Primavera</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="assets/img/lento14.jpg" alt="">
-                <div class="des">
-                    <span>Rayban</span>
-                    <h5>Rayban Round Fleck</h5>
-                    <h4>$2200</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="assets/img/lentes2.jpg" alt="">
-                <div class="des">
-                    <span>Merry's</span>
-                    <h5>Merry's Round Fleck</h5>
-                    <h4>$1859</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="assets/img/lentes3.jpg" alt="">
-                <div class="des">
-                    <span>CCspace</span>
-                    <h5>CCspace Oftalmicos Fleck</h5>
-                    <h4>$1549</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="assets/img/lentes4.jpg" alt="">
-                <div class="des">
-                    <span>Didi biu</span>
-                    <h5>DidiBiu Oftalmicos Round</h5>
-                    <h4>$1829</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="assets/img/lentes5.jpg" alt="">
-                <div class="des">
-                    <span>Rayban</span>
-                    <h5>Rayban Round </h5>
-                    <h4>$1949</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="assets/img/lentes6.jpg" alt="">
-                <div class="des">
-                    <span>Hawkers</span>
-                    <h5>Hawkers Sun Flat</h5>
-                    <h4>$1499</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="assets/img/lentes10.png" alt="">
-                <div class="des">
-                    <span>Hawkers</span>
-                    <h5>Hawkers Sun Round Mica Aul</h5>
-                    <h4>$1299</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="assets/img/lentes.png" alt="">
-                <div class="des">
-                    <span>Zegache</span>
-                    <h5>Zegache Oficina</h5>
-                    <h4>$899</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-arrow-down cart"></i></a>
-            </div>
+    </section>
+    <section id="productos">
+        <div id="pro-container">
+
         </div>
+        
     </section>
 
     <section id="banner">
@@ -217,6 +155,31 @@
                 <button class="normal">Registrarte</button>
             </div>
     </section>
+    <section id="tienda-box" class="tinda-boxes">
+        <div class="tienda-div">
+        <h2>Tus productos</h2>
+        <p>Vuelve Pronto</p>
+        </div>
+    <section id="tienda">
+        <div class="pro-container">
+            <div class="pro">
+
+            </div>
+
+        </div>
+        
+    </section>
+</section>
+    <div class="wrapper__sidebar-cart-total">
+        <span class="wrapper__sidebar-cart-total-text">Total:</span>
+        <span id="cart-total" class="wrapper__sidebar-cart-total-price">$0</span>
+    </div>
+    <div class="wrapper__sidebar-cart-btn">
+        <button id="pagar" class="normal-tienda">
+          <i class='bx bx-shopping-bag'></i>
+          <span class="wrapper__sidebar-cart-btn-text">Pagar</span>
+        </button>
+      </div>
 
     <footer class="section-p1">
         <div class="col">
